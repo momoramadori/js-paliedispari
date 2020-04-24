@@ -22,4 +22,6 @@ if (pari_dispari == 'pari' && (numero1_5 + numero) % 2 == 0) {
     console.log('Hai perso! il numero è dispari ed è: ' + (numero1_5 + numero));
 } else if (pari_dispari == 'dispari' && (numero1_5 + numero) % 2 == 0) {
     console.log('Hai perso! il numero è pari ed è: ' + (numero1_5 + numero));
+} else {
+    console.log('Qualcosa è andato storto, ritenta!');
 }
