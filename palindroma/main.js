@@ -5,21 +5,17 @@ var utentValue = prompt('La parola che inserisci è palindroma?');
 console.log(utentValue);
 
 // Creo una funzione che mi permetta di capire se la parola è palindroma
-function palindrome() {
-    var wordToArray = utentValue.split('');
+function palindrome(parola) {
+    var wordToArray = parola.split('');
     var invertArray = wordToArray.reverse();
     var arrayToInvWord = invertArray.join('');
+    return arrayToInvWord;
     console.log(arrayToInvWord);
-    if (arrayToInvWord == utentValue) {
-        //Se la parola inserita e il suo inverso sono uguali restituisco vero
-        return true;
-    } else {
-        //Se la parola inserita e il suo inverso sono diverse restituisco falso
-        return false;
-    }
 }
 
-if (palindrome(utentValue) == true) {
+var parola_palindroma = palindrome(utentValue);
+
+if (parola_palindroma == utentValue) {
     //Se palindrome() è true allora la parola è palindroma
     console.log('la parola è palindroma');
 } else {
